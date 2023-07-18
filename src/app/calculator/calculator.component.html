@@ -1,0 +1,32 @@
+<img class="back" src="https://wallpaperbat.com/img/690671-waves-a-macos-big-sur-inspired-wallpaper-pack.jpg">
+<div class="home" routerLink="/">Come back</div>
+<div class="box">
+  <img class="image-phone" src="/assets/images/pngtree-vertical-smartphone-with-transparent-wide-display-png-image_5897986-removebg-preview.png" alt="image iphone">
+<div class="container">
+  <div class="viewNumber">
+    {{displayNumber}}
+    {{operationType}}
+  </div>
+  <div class="selectNumber">
+    <div class="q ac" id="ac" (click)="calculator('ac', 'ac')">AC</div>
+    <div class="q piumeno" (click)="calculator('+/-', '+/-')">+/-</div>
+    <div class="q resto-divisione" (click)="calculator('%', '%')">%</div>
+    <div class="q diviso" (click)="calculator('/', '/')">/</div>
+    <div class="q sette" (click)="calculator('7', '7')">7</div>
+    <div class="q otto" (click)="calculator('8', '8')">8</div>
+    <div class="q nove" (click)="calculator('9', '9')">9</div>
+    <div class="q per" (click)="calculator('x', 'x')">x</div>
+    <div class="q quattro" (click)="calculator('4', '4')">4</div>
+    <div class="q cinque" (click)="calculator('5', '5')">5</div>
+    <div class="q sei" (click)="calculator('6', '6')">6</div>
+    <div class="q meno" (click)="calculator('-', '-')">-</div>
+    <div class="q uno" id="1" (click)="calculator('1', '1')">1</div>
+    <div class="q due" id="2"(click)="calculator('2', '2')">2</div>
+    <div class="q tre" (click)="calculator('3', '3')">3</div>
+    <div class="q piu" (click)="calculator('+', '+')">+</div>
+    <div class="q zero" (click)="calculator('0', '0')"><p>0</p></div>
+    <div class="q virgola" (click)="calculator('.', '.')">.</div>
+    <div class="q uguale" (click)="calculator('=', '=')">=</div>
+  </div>
+</div>
+</div>

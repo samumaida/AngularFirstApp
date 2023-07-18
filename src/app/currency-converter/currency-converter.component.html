@@ -1,0 +1,19 @@
+<div class="box2">
+  <div class="home" routerLink="/">Come back</div>
+<div class="container2">
+  <div class="secondInput">
+    <h1 class="h1-title">Currency Euro converter</h1>
+  <mat-form-field>
+    <mat-label>Converter to</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let valuta of valute" [value]="valuta.value">
+        {{valuta.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  </div>
+  <input class="inputConverter" type="number" placeholder="Enter digit" (keyup)="onKeyUp($event)" />
+  {{currencyValue}}{{simbol}}
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,96L62.6,64L125.2,224L187.8,64L250.4,256L313,128L375.7,96L438.3,32L500.9,192L563.5,32L626.1,224L688.7,160L751.3,224L813.9,160L876.5,128L939.1,256L1001.7,192L1064.3,224L1127,256L1189.6,128L1252.2,128L1314.8,64L1377.4,32L1440,128L1440,320L1377.4,320L1314.8,320L1252.2,320L1189.6,320L1127,320L1064.3,320L1001.7,320L939.1,320L876.5,320L813.9,320L751.3,320L688.7,320L626.1,320L563.5,320L500.9,320L438.3,320L375.7,320L313,320L250.4,320L187.8,320L125.2,320L62.6,320L0,320Z"></path></svg>
+</div>

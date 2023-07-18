@@ -1,0 +1,176 @@
+.container{
+display: flex;
+flex-direction: column;
+}
+.container>img{
+position: fixed;
+z-index: -1;
+height: 100%;
+width: 100%;
+}
+.container-bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.container-top{
+  display: flex;
+  justify-content: space-evenly;
+align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  margin-top: 5em;
+}
+.calculator{
+  display: flex;
+  flex-basis: 30%;
+  height: 350px;
+  margin: 2em;
+  min-width: 310px;
+  max-width: 400px;
+  border-radius: 2em;
+  overflow: hidden;
+  justify-content: flex-end;
+  background-color: rgb(39, 39, 39);
+}
+.calculator:hover{
+  transform: scale(110%);
+  box-shadow: 0px 0px 25px #bfbfbf;
+}
+.converter:hover{
+  transform: scale(110%);
+  box-shadow: 0px 0px 25px #bfbfbf;
+}
+.sasso-carta-forbice:hover{
+  transform: scale(110%);
+  box-shadow: 0px 0px 25px #bfbfbf;
+}
+.converter{
+  display: flex;
+  flex-basis: 30%;
+  height: 350px;
+  margin: 2em;
+  min-width: 310px;
+  max-width: 400px;
+  border-radius: 2em;
+  overflow: hidden;
+  justify-content: flex-end;
+  background-color: rgb(39, 39, 39);
+}
+.sasso-carta-forbice{
+  display: flex;
+  flex-basis: 30%;
+  background-color: rgb(39, 39, 39);
+  height: 350px;
+  margin: 2em;
+  min-width: 310px;
+  max-width: 400px;
+  border-radius: 2em;
+  overflow: hidden;
+  justify-content: flex-end;
+}
+.calculator img{
+  display: flex;
+  height: 250px;
+  margin: auto;
+}
+.sasso-carta-forbice img{
+  height: 250px;
+  margin: auto;
+}
+.converter img{
+  margin-right: 10px;
+  height: 250px;
+  margin: auto;
+}
+.h1-calc{
+  display: flex;
+font-size: 30px;
+align-items: center;
+line-height: 1em;
+font-weight: bold;
+padding-left: .5em;
+color: whitesmoke;
+}
+.h1-curr{
+  display: flex;
+font-size: 30px;
+align-items: center;
+line-height: 1.5em;
+font-weight: bold;
+padding-left: .5em;
+color: whitesmoke;
+}
+.h1-game{
+  display: flex;
+font-size: 30px;
+align-items: center;
+line-height: 1em;
+font-weight: bold;
+padding-left: .5em;
+color: whitesmoke;
+}
+
+@media (max-width: 768px){
+  .calculator img{
+    height: 250px ;
+    margin-right: 5px;
+  }
+  .sasso-carta-forbice img{
+    height: 250px ;
+    margin: 28px -15px 0 0;
+  }
+  .converter img{
+    height: 250px ;
+  }
+  .calculator{
+    align-items: center;
+    margin: 12px;
+  }
+  .sasso-carta-forbice{
+    align-items: center;
+    margin: 12px;
+  }
+  .converter{
+    align-items: center;
+    margin: 12px;
+  }
+  .h1-calc{
+    display: flex;
+  font-size: 26px;
+  align-items: center;
+  line-height: 1.3em;
+  font-weight: bold;
+  padding-left: .8em;
+  color: whitesmoke;
+  }
+  .h1-curr{
+    display: flex;
+  font-size: 30px;
+  align-items: center;
+  line-height: 1.5em;
+  font-weight: bold;
+  padding-left: .8em;
+  color: whitesmoke;
+  }
+  .h1-game{
+    display: flex;
+  font-size: 30px;
+  align-items: center;
+  line-height: 1em;
+  font-weight: bold;
+  padding-left: .8em;
+  color: whitesmoke;
+  }
+  .container{
+    height: 100%;
+display: flex;
+flex-direction: row;
+  }
+  .container-top{
+    margin-top: 0;
+  }
+
+}

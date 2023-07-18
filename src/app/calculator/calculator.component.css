@@ -1,0 +1,94 @@
+.back{
+  position: fixed;
+  z-index: -30;
+  top:-5px;
+}
+.home{
+  background-color: rgba(255, 255, 255, 0.507);
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  border: 2px solid rgb(0, 0, 0);
+  width: 100px;
+  margin: .5em auto 0 .5em;
+position: fixed;
+}
+.box{
+height: 100%;
+overflow-y: hidden;
+}
+.selectNumber{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.viewNumber{
+  height: 210px;
+display: flex;
+width: auto;
+font-size: 50px;
+justify-content: flex-end;
+align-items: end;
+padding: 0em 1em 0em 1em;
+margin-top: 150px;
+margin-bottom: .5em;
+}
+.container{
+  display: flex;
+flex-direction: column;
+max-width: 375px;
+margin-left: auto;
+margin-right: auto;
+}
+.q{
+height: 78px;
+width: 78px;
+background-color: orange;
+display: flex;
+border-radius: 50%;
+align-items: center;
+justify-content: center;
+margin: .2em .2em .2em .2em;
+font-size: 22px;
+}
+.zero{
+  width: 163px;
+  border-radius: 2em;
+  justify-content: flex-start;
+}
+.zero p{
+  margin-left: 1.5em;
+}
+.ac, .piumeno, .resto-divisione{
+  background-color: rgb(159,159,159);
+}
+.zero, .virgola, .uno, .due, .tre, .quattro, .cinque, .sei, .sette, .otto, .nove{
+  background-color: rgb(49,49,49);
+  color: white;
+}
+.uguale, .piu, .meno, .per, .diviso{
+  background-color: rgb(246,153,6);
+  color: white;
+}
+ .q:hover{
+  opacity: 0.7;
+ }
+ .q:active:not(.ac, .piumeno, .resto-divisione){
+  opacity: .5;
+ }
+ .q:active:not(.uguale, .piu, .meno, .per, .diviso, .zero, .virgola, .uno, .due, .tre, .quattro, .cinque, .sei, .sette, .otto, .nove){
+  opacity: .5;
+ }
+.image-phone{
+  position: absolute;
+  z-index: -2;
+  height: 950px;
+top: 0
+}
+.box{
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and(max-width: 768px){
+
+}

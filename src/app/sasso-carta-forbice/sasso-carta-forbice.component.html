@@ -1,0 +1,38 @@
+<img class="back" src="https://wallpaperbat.com/img/690671-waves-a-macos-big-sur-inspired-wallpaper-pack.jpg">
+<div class="home" routerLink="/">Come back</div>
+<div class="container">
+<h1>Benvenut* su Sasso, Carta, Forbice!</h1>
+
+<div class="name">
+  <label>Ciao sfidante! Inserisci pure il tuo nome:</label>
+  <div class="submit">
+  <input [(ngModel)]="nomeGiocatore" placeholder="Nome">
+  <button (click)="onGiocatoreSubmit()">Invia</button>
+</div>
+</div>
+
+<div class="text-div" #text></div>
+
+<div class="score">
+  <div class="score-player">
+  <div id="nome-giocatore">{{nomeGiocatore}} :</div>
+  <span id="punti-giocatore" #puntiGiocatore> {{punteggioGiocatore}}</span>
+</div>
+<div class="score-pc">
+  <span>PC: </span>
+  <p id="punti-computer" #puntiComputer>{{punteggioComputer}}</p>
+</div>
+</div>
+
+<div class="container-button">
+<button (click)="onCartaClick()">Carta</button>
+<button (click)="onForbiceClick()">Forbice</button>
+<button (click)="onSassoClick()">Sasso</button>
+</div>
+
+<div class="t2">
+<p #text2></p>
+</div>
+<div class="vt">
+<p  #victory></p>
+</div>
