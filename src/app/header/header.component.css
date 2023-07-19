@@ -172,5 +172,16 @@ flex-direction: row;
   .container-top{
     margin-top: 0;
   }
-
+  .calculator:hover{
+    transform: none;
+    box-shadow: 0px 0px 25px #bfbfbf;
+  }
+  .converter:hover{
+    transform: none;
+    box-shadow: 0px 0px 25px #bfbfbf;
+  }
+  .sasso-carta-forbice:hover{
+    transform: none;
+    box-shadow: 0px 0px 25px #bfbfbf;
+  }
 }

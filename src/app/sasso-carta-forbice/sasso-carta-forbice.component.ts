@@ -10,6 +10,7 @@ export class SassoCartaForbiceComponent {
   nomeGiocatore: string = "";
   punteggioGiocatore: number = 0;
   punteggioComputer: number = 0;
+  colorControl: string = '';
 
   @ViewChild('text', { static: true }) textElementRef!: ElementRef;
   @ViewChild('victory', { static: true }) victoryElementRef!: ElementRef;
@@ -53,16 +54,19 @@ export class SassoCartaForbiceComponent {
       if (numberBot <= 2) {
         this.text2ElementRef.nativeElement.innerHTML = "Computer ha scelto carta!";
         this.victoryElementRef.nativeElement.innerHTML = "PAREGGIO!";
+        this.colorControl = 'orange';
       } else if (numberBot >= 6) {
         this.text2ElementRef.nativeElement.innerHTML = "Computer ha scelto sasso!";
         this.victoryElementRef.nativeElement.innerHTML = "COMPLIMENTI, HAI VINTO!";
         this.punteggioGiocatore++;
         this.puntiGiocatoreElementRef.nativeElement.innerHTML = `${this.punteggioGiocatore}`;
+        this.colorControl = 'green';
       } else {
         this.text2ElementRef.nativeElement.innerHTML = "Computer ha scelto forbice!";
         this.victoryElementRef.nativeElement.innerHTML = "MI SPIACE, HA VINTO IL COMPUTER!";
         this.punteggioComputer++;
         this.puntiComputerElementRef.nativeElement.innerHTML = `${this.punteggioComputer}`;
+        this.colorControl = 'red';
       }
     };
 
@@ -101,14 +105,17 @@ export class SassoCartaForbiceComponent {
         this.victoryElementRef.nativeElement.innerHTML = "COMPLIMENTI, HAI VINTO!";
         this.punteggioGiocatore++;
         this.puntiGiocatoreElementRef.nativeElement.innerHTML = `${this.punteggioGiocatore}`;
+        this.colorControl = 'green'
       } else if (numberBot >= 6) {
         this.text2ElementRef.nativeElement.innerHTML = "Computer ha scelto sasso!";
         this.victoryElementRef.nativeElement.innerHTML = "MI SPIACE, HA VINTO IL COMPUTER!";
         this.punteggioComputer++;
         this.puntiComputerElementRef.nativeElement.innerHTML = `${this.punteggioComputer}`;
+        this.colorControl = 'red';
       } else {
         this.text2ElementRef.nativeElement.innerHTML = "Computer ha scelto forbice!";
         this.victoryElementRef.nativeElement.innerHTML = "PAREGGIO!";
+        this.colorControl = 'orange';
       }
     };
 
@@ -147,14 +154,17 @@ export class SassoCartaForbiceComponent {
         this.victoryElementRef.nativeElement.innerHTML = "MI SPIACE, HA VINTO IL COMPUTER!";
         this.punteggioComputer++;
         this.puntiComputerElementRef.nativeElement.innerHTML = `${this.punteggioComputer}`;
+        this.colorControl = 'red';
       } else if (numberBot >= 6) {
         this.text2ElementRef.nativeElement.innerHTML = "Computer ha scelto sasso!";
         this.victoryElementRef.nativeElement.innerHTML = "PAREGGIO!";
+        this.colorControl = 'orange';
       } else {
         this.text2ElementRef.nativeElement.innerHTML = "Computer ha scelto forbice!";
         this.victoryElementRef.nativeElement.innerHTML = "COMPLIMENTI, HAI VINTO!";
         this.punteggioGiocatore++;
         this.puntiGiocatoreElementRef.nativeElement.innerHTML = `${this.punteggioGiocatore}`;
+        this.colorControl = 'green'
       }
     };
 

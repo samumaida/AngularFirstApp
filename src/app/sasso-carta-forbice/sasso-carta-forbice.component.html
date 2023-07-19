@@ -34,5 +34,5 @@
 <p #text2></p>
 </div>
 <div class="vt">
-<p  #victory></p>
+<p [ngClass]="{'color-victory': colorControl === 'green', 'color-tie': colorControl === 'orange', 'color-defeat': colorControl === 'red'}"  #victory></p>
 </div>
